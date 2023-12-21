@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari de registre al Portal</title>
+</head>
+<body>
+    <h1>::Formulari de registre al Portal::</h1>
+    <form>
+    <fieldset>
+        <legend>Dades personals</legend>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+        <label for="username">Cognoms:</label>
+        <input type="text" id="Cognoms" name="Cognoms" required>
+
+        <br><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" pattern="\d{9}[A-Za-z]" required>
+
+        <br><br>
+
+        <label for="dni">Username</label>
+        <input type="text" id="Username" name="Username" required>
+        <label for="dni">Clau</label>
+        <input type="text" id="Clau" name="Clau" required>
+        <label for="dni">Repetir Clau</label>
+        <input type="text" id="Repetir Clau" name="Repetir Clau" required>
+
+        <br><br>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+        
+        <label for="franja_edat">Franja d'edat:</label>
+        <select id="list1" name="list1" size="1">
+            <option value="16">16</option>
+            <option value="15">15</option>
+            <option value="14">14</option>
+            <option value="13">13</option>
+            <option value="12">12</option>
+            <option value="11">11</option>
+            <option value="10">10</option>
+            <option value="9">9</option>
+            <option value="8">8</option>
+            <option value="7">7</option>
+            <option value="6">6</option>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="0">0</option>
+        </select>
+
+        <br><br>
+
+        <label for="sexe">Sexe:</label>
+        <input type="radio" id="home" name="sexe" value="home" required>
+        <label for="home">Home</label>
+        <input type="radio" id="dona" name="sexe" value="dona" required>
+        <label for="dona">Dona</label>
+
+        <br><br>
+
+        <label for="cod_pais">Codi País:</label>
+        <input type="text" id="cod_pais" name="cod_pais" pattern="[A-Za-z]{2}" required>
+        <label for="cod_zip">Codi ZIP :</label>
+        <input type="text" id="cod_zip" name="cod_zip" pattern="\d{5}" required>
+        <br><br>
+        <label for="imatge_personal">Imatge Personal:</label>
+        <input type="file" id="imatge_personal" name="imatge_personal" accept="image/*">
+        <br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Altres dades d'interès</legend>
+        <label for="interessos">Interessos:</label>
+        <br>
+        <input type="checkbox" id="css" name="interessos[]" value="CSS">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="html5" name="interessos[]" value="HTML5">
+        <label for="html5">HTML5</label>
+        <input type="checkbox" id="javascript" name="interessos[]" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <br><br> 
+        <input type="checkbox" id="Xarxes Socials" name="interessos[]" value="Xarxes Socials">
+        <label for="css">Xarxes Socials</label>
+        <input type="checkbox" id="Programació Html" name="interessos[]" value="Programació Html">
+        <label for="html5">Programació Html</label>
+        <input type="checkbox" id="Programació CSS" name="interessos[]" value="Programació CSS">
+        <label for="javascript">Programació CSS</label>
+        <input type="checkbox" id="Disseny" name="interessos[]" value="Disseny">
+        <label for="javascript">Disseny</label>
+        <br><br> 
+        <label for="comentaris">Comentaris:</label>
+        <br>
+        <textarea id="comentaris" name="comentaris" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Esborrar">
+    </fieldset>
+    </form>
+</body>
+</html>

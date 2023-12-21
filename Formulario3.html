@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV-Opera</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="province">Provincia:</label>
+            <select id="province" name="province">
+
+                <option value="">- selecciona -</option>
+                <option value="madrid">Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="valencia">Valencia</option>
+                
+            </select>
+
+            <br>
+
+            <label for="cumpleaños">Fecha de nacimiento:</label>
+
+            <br>
+            
+            
+            <input type="text" id="cumpleaños" name="" required>
+            <label for="cumpleaños">de</label>
+            <select id="list1" name="list1" size="1">
+                <option value="enero">enero</option>
+                <option value="febrero">febrero</option>
+                <option value="marzo">marzo</option>
+                <option value="abril">abril</option>
+                <option value="mayo">mayo</option>
+                <option value="junio">junio</option>
+                <option value="julio">julio</option>
+                <option value="agosto">agosto</option>
+                <option value="septiembre">septiembre</option>
+                <option value="octubre">octubre</option>
+                <option value="noviembre">noviembre</option>
+                <option value="diciembre">diciembre</option>
+            </select>
+            <label for="de">de</label>
+            <input type="text" id="de" name="de" required>
+
+            <br>
+
+            <label for="interests">Temas de interés:</label>
+            <br>
+
+            <select id="list2" name="list2" size="5">
+                <option value="Administración de base de Datos">Administración de base de Datos</option>
+                <option value="Analisis y preogramacion">Analisis y preogramacion</option>
+                <option value="Arquitectura">Arquitectura</option>
+                <option value="Calidad">Calidad</option>
+                <option value="ERP, CRM, Business Intelligence">ERP, CRM, Business Intelligence</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
